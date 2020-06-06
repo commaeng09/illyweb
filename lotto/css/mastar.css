@@ -91,7 +91,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #444442;
+    background:url(../images/section-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .info p{
     font-family: 'GmarketSansMedium'; 
