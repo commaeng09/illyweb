@@ -1,6 +1,19 @@
 @import url("reset.css");
-@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* top  */
 
 
@@ -8,27 +21,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
- 
+}
 
-  section h2 {
+
+section h2 {
     font-size: 4em;
     color: #4b656d;
-  }
-  section h2 span {
+}
+
+section h2 span {
     display: block;
     font-size: 0.5em;
     color: #ff4983;
-  }
-  section p {
+}
+
+section p {
     margin-top: 20px;
     font-size: 1.2em;
-  }
+}
 
 
-  .preloader {
+.preloader {
     position: relative;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -37,78 +53,101 @@
     align-items: center;
     background: #070707;
     z-index: 10000000;
-  }
+}
 
-  .top{
-      position: relative;
-  }
+.top {
+    position: relative;
+}
 
-  .text{
-      position: absolute;
-      top:0;
-  }
-  .preloader:before {
+.text {
+    position: absolute;
+    top: 0;
+}
+
+.preloader:before {
     content: 'Lodaing';
     position: absolute;
     font-size: 10vh;
     font-weight: 900;
     text-transform: uppercase;
-    color: rgba(255,255,255,.3);
-    
-  }
-  .counter {
+    color: rgba(255, 255, 255, .3);
+
+}
+
+.counter {
     position: relative;
     color: #fff;
     font-size: 16em;
     font-weight: 700;
     z-index: 1;
-  }
-  .counter:after {
+}
+
+.counter:after {
     content: '%';
     font-size: 0.5em;
-    
-  }
-  
-  .hide {
+
+}
+
+.hide {
     opacity: 0;
     transition: 1s;
     point-events: none;
-  }
-  
-  .preloader.active {
+}
+
+.preloader.active {
     transform: translateY(-100vh);
     transition: ease-in-out 2s;
-  }
+}
 
-  /* lodaing  */
+/* lodaing  */
 
-.info{
+.info {
     position: absolute;
     width: 100%;
     height: 100vh;
-    top:0;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:url(../images/section-bg.jpg);
+    background: url(../images/section-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.info p{
-    font-family: 'GmarketSansMedium'; 
-    color:#fff;
+
+.info p {
+    font-family: 'GmarketSansMedium';
+    color: #fff;
     font-size: 3em;
 }
-#tel{
+
+
+/* lottoDB START */
+.lotto-DB {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#labs {
+    font-weight: bold;
+    ;
+}
+
+/* lottoDB END */
+
+#tel {
     background-color: #2d2d2d;
 }
-#lotto-btn{
-    color:  #fff;
+
+#lotto-btn {
+    color: #fff;
     margin-top: 20px;
 }
-.form{
+
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,12 +157,12 @@
 }
 
 
-#country{
+#country {
     width: 20%;
     padding: 10px 0;
 }
 
-#tel{
+#tel {
     border: none;
     padding: 20px 0;
     width: 320px;
@@ -131,20 +170,31 @@
     text-align: center;
     font-size: 1.2em;
 }
-#lotto-btn{
+
+#lotto-btn {
     width: 320px;
     background-color: #c1a969;
     padding: 20px 20px;
     border: none;
     border-radius: 3px;
     font-size: 1.5em;
-    font-family: 'GmarketSansMedium'; 
-}
-#check{
-    color: #fff;
+    font-family: 'GmarketSansMedium';
 }
 
-.text-bar{
+#check {
+    color: #fff;
+    margin: 10px 0;
+}
+
+#check-1 {
+    margin: 0 10px;
+}
+
+#check-2 {
+    margin: 0 10px;
+}
+
+.text-bar {
     color: #fff;
     font-family: 'GmarketSansBold';
     font-size: 2em;
@@ -153,154 +203,191 @@
     animation-iteration-count: infinite;
 }
 
-@keyframes lotto {
-    0%{
-        opacity: 1;
+@media screen and (max-width:768px) {
+    .lotto-DB {
+        font-size: 1.8rem;
     }
-    25%{
-        opacity:0.3;
-    }
-    50%{
-        opacity: 1;
-    }
-    75%{
-        opacity: 0.3;
-    }
-    
-    100%{
-        opacity:1;
-    }
-  }
 
-  .title{
-      padding: 5% 0;
-      background-color: #f1f1f1;
-  }
-.title-img{
-    width: 1280px;
-    margin:0 auto;
+    .info p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
 }
 
-.title-img{
+@keyframes lotto {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.title {
+    padding: 5% 0;
+    background-color: #f1f1f1;
+}
+
+.title-img {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.title-img {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.line01{
+.line01 {
     width: 400px;
     height: 2px;
     background-color: #000;
 }
-.line02{
+
+.line02 {
     width: 400px;
     height: 2px;
     background-color: #000;
 }
 
 
-.txt-title{
+.txt-title {
     font-family: 'GmarketSansBold';
 }
-.gold{
-    color:#c1a969;
+
+.gold {
+    color: #c1a969;
     font-size: 4em;
 }
-.maintxt{
-    font-size:2.5em;
-    font-family: 'GmarketSansMedium'; 
+
+.maintxt {
+    font-size: 2.5em;
+    font-family: 'GmarketSansMedium';
 }
-.sub-title{
+
+.sub-title {
     font-family: 'GmarketSansBold';
     text-align: center;
 }
-.main-txt{
+
+.main-txt {
     font-size: 4em;
     margin-top: 0.4em;
 }
-.sub-txt{
-    font-size:2.5em;
-    font-family: 'GmarketSansMedium'; 
+
+.sub-txt {
+    font-size: 2.5em;
+    font-family: 'GmarketSansMedium';
 }
-.line-warp{
+
+.line-warp {
     width: 1280px;
     margin: auto;
     margin-top: 20px;
     padding: 20px 0;
     border: 2px solid #c1a969;
 }
-.line-warp h1{
+
+.line-warp h1 {
     text-align: center;
-    font-size:2.5em;
+    font-size: 2.5em;
     font-family: 'GmarketSansBold';
 }
-.line-warp h1 span{
- color:red;
- animation-name: sub;
- animation-duration: 1s;
- animation-iteration-count: infinite;
+
+.line-warp h1 span {
+    color: red;
+    animation-name: sub;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
-.video-bg{
+
+.video-bg {
     padding: 0;
     background-color: #030303;
 }
-.video{
+
+.video {
     width: 1280px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.lotto-video{
+
+.lotto-video {
     width: 100%;
 }
 
 
 
 @keyframes sub {
-    0%{
+    0% {
         opacity: 1;
     }
-    25%{
-        opacity:0.3;
-    }
-    50%{
-        opacity: 1;
-    }
-    75%{
+
+    25% {
         opacity: 0.3;
     }
-    
-    100%{
-        opacity:1;
+
+    50% {
+        opacity: 1;
     }
-  }
 
-  .event{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .event-txt{
-      display: flex;
+    75% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-txt {
+    display: flex;
     margin-top: 50px;
-      justify-content: center;
-  }
-  .event-txt>h1{
-    font-size:2em;
-    font-family: 'GmarketSansBold';
-  }
-  .border-line>h1{
-      text-align: center;
-      font-size: 8em;
-  }
-  footer{
-      padding: 50px;
-      text-align: center;
-      color:#fff;
-      background-color: #1e1e1e;
-      
-  }
+    justify-content: center;
+}
 
-.footer-bg{
+.event-txt>h1 {
+    font-size: 2em;
+    font-family: 'GmarketSansBold';
+}
+
+.border-line>h1 {
+    text-align: center;
+    font-size: 8em;
+}
+
+footer {
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #1e1e1e;
+
+}
+
+.footer-bg {
     background: url(../images/footer_bg.jpg);
     background-position: center;
     background-size: cover;
@@ -309,15 +396,15 @@
     padding-bottom: 30px;
 }
 
-.footer-img{
+.footer-img {
     width: 1280px;
-    margin:0 auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.lotto-footer-title{
+.lotto-footer-title {
     width: 1280px;
     margin: 0 auto;
     background-color: #e1bb68;
@@ -327,98 +414,119 @@
     margin-top: -30px;
     margin-bottom: 50px;
 }
-.lotto-footer-title-txt>h1{
+
+.lotto-footer-title-txt>h1 {
     font-size: 3em;
     font-style: italic;
     font-family: 'GmarketSansBold';
     color: #000;
 }
-.lotto-footer-title-txt>p{
+
+.lotto-footer-title-txt>p {
     font-size: 2em;
     color: #fff;
-    font-family: 'GmarketSansMedium'; 
+    font-family: 'GmarketSansMedium';
 }
 
-  
-@media(max-width:1160px){
-    .lotto-footer-title{
+/* .preloader{
+    opacity: 0;
+} */
+
+@media(max-width:1160px) {
+    .lotto-footer-title {
         width: 100%;
-    
+
         display: flex;
         flex-direction: column;
     }
-    .lotto-footer-title-txt{
+
+    .lotto-footer-title-txt {
         margin-top: 100px;
         text-align: center;
         padding-bottom: 40px;
     }
-    .lotto-footer-img>img{
+
+    .lotto-footer-img>img {
         width: 100%;
     }
-    .lotto-footer-title-txt>h1{
+
+    .lotto-footer-title-txt>h1 {
         font-size: 3em;
 
     }
-    .lotto-footer-title-txt>p{
+
+    .lotto-footer-title-txt>p {
         font-size: 1.5em;
- 
-    }
-
-    .footer-img{
-        width:100%;
+        line-height: 1.3em;
 
     }
-    .footer-img>img{
-        width:100%;
-    }
-    
-    
 
-.counter {
-    position: relative;
-    color: #fff;
-    font-size: 9em;
-    font-weight: 700;
-    z-index: 1;
-}
-    .title-img{
+    .footer-img {
+        width: 100%;
+
+    }
+
+    .footer-img>img {
         width: 100%;
     }
-    .line01{
+
+    .counter {
+        position: relative;
+        color: #fff;
+        font-size: 9em;
+        font-weight: 700;
+        z-index: 1;
+    }
+
+    .title-img {
+        width: 100%;
+    }
+
+    .line01 {
         display: none;
     }
-    .line02{
+
+    .line02 {
         display: none;
     }
-    .title-img{
+
+    .title-img {
         align-items: center;
         justify-content: center;
     }
-    .txt-title>h1{
+
+    .txt-title>h1 {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
         justify-content: center;
     }
-    .title{
-        padding: 30px 0; 
+
+    .title {
+        padding: 30px 0;
     }
-    .main-txt{
+
+    .main-txt {
         font-size: 2.5em;
         margin-top: 0.4em;
     }
-    .sub-txt{
-        font-size:1.5em;
-        font-family: 'GmarketSansMedium'; 
+
+    .sub-txt {
+        font-size: 1.5em;
+        font-family: 'GmarketSansMedium';
     }
-    .line-warp{
+
+    .line-warp {
         width: 100%;
     }
-    .line-warp h1{
-        font-size:1.8em;
+
+    .line-warp h1 {
+        font-size: 1.9em;
+        line-height: 1.7em;
     }
-    .event-txt{
+
+    .event-txt {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -426,20 +534,30 @@
         text-align: center;
         margin-top: 30px;
     }
-    .event-txt>h1{
+
+    .event-txt>h1 {
         font-size: 1.5em;
+        line-height: 1.3em;
     }
-    .red{
-        color:red;
+
+    .red {
+        color: red;
     }
-    .border-line{
+
+    .border-line {
         display: none;
     }
-    .video{
+
+    .video {
         width: 100%;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .lotto-video{
+
+    .lotto-video {
         width: 100%;
+    }
+    .footer{
+        font-size: 1rem;
+        line-height: 1.5em;
     }
 }

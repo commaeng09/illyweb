@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=euc-kr">
@@ -12,116 +13,125 @@
 
     <title>로또센터</title>
     <link rel="stylesheet" href="css/mastar.css">
-    
+
 </head>
+
 <body>
 
-<section class="top">
+    <section class="top">
 
-    <div class="preloader">
-        <div class="text-bar">
-            <h1>로또번호를 분석 중입니다.</h1>
+        <div class="preloader">
+            <div class="text-bar">
+                <h1>로또번호를 분석 중입니다.</h1>
+            </div>
+            <div class="counter">
+                0
+            </div>
         </div>
-        <div class="counter">
-              0
-        </div>
-    </div>
-    <section class="info">
-        <div class="lotto-center-logo">
-            <img src="images/logo2.png" alt="logo">
-        </div>
-        <p>1등 번호를 받으시려면 연락처를 입력하세요</p>
-        <div class="form">
-        <form class="form">
-            <input type="tel" placeholder="연락처" id="tel">
-            <input type="submit" value="1등 당첨번호 받기" id="lotto-btn">
-          </form>
-          <form id="check">
-            <input type="checkbox" name="" id="" checked><span>개인정보보호정책에 동의함</span>
-            <input type="checkbox" name="" id="" checked><span>SMS 수신동의</span>
-          </form>
-        </div>
+        <section class="info">
+            <div class="lotto-center-logo">
+                <img src="images/logo2.png" alt="logo">
+            </div>
+            <div class="lotto-DB">
+                <span id="labs"></span><span id="text"> 회차</span>
+                <span id="yearby"></span><span id="text">년</span>
+                <span id="monthby"></span><span id="text">월</span>
+                <span id="dayby"></span><span id="text">일</span>
+            </div>
+            <p>1등 번호를 받으시려면 연락처를 입력하세요</p>
+            <div class="form">
+                <form class="form">
+                    <input type="tel" placeholder="연락처" id="tel">
+                    <input type="submit" value="1등 당첨번호 받기" id="lotto-btn">
+                </form>
+                <form id="check">
+                    <input type="checkbox" name="" id="check-1" checked><span>개인정보보호정책에 동의함</span>
+                    <input type="checkbox" name="" id="check-2" checked><span>SMS 수신동의</span>
+                </form>
+            </div>
+        </section>
+        <!-- form  -->
     </section>
-    <!-- form  -->
-</section>
     <!-- lodaing -->
 
-<section class="title">
-    <div class="title-img">
-        <div class="line01">
+    <section class="title">
+        <div class="title-img">
+            <div class="line01">
 
-        </div>
-        <div class="txt-title">
-            <h1><span class="gold">01</span><span class="maintxt">당신이 주인공</span></h1>
-        </div>
-        <div class="line02">
+            </div>
+            <div class="txt-title">
+                <h1><span class="gold">01</span><span class="maintxt">당신이 주인공</span></h1>
+            </div>
+            <div class="line02">
 
+            </div>
         </div>
-    </div>
-    <div class="sub-title">
-        <h1 class="main-txt">로열넘버 바로받기</h1>
-        <p class="sub-txt">#이번주 로또 1등 예상번호 서비스 받아보기</p>
-    </div>
-    <div class="line-warp">
-        <h1>프리미엄(적용기간:1800일)  50% 선착순 이벤트중 <span>“마감임박”</span> </h1>
-    </div>
-    <div class="event">
-        <div class="border-line">
-            <h1>{</h1>
+        <div class="sub-title">
+            <h1 class="main-txt">로열넘버 바로받기</h1>
+            <p class="sub-txt">#이번주 로또 1등 예상번호 서비스 받아보기</p>
         </div>
-        <div class="event-txt">
-            <h1 class="red">추가혜택 :</h1>
-            <h1>토큰 4820개 (로얄:4800+서비스20)<br>
-                보너스 M-Point +500</h1>
+        <div class="line-warp">
+            <h1>프리미엄(적용기간:1800일) 50% 선착순 이벤트중 <span>“마감임박”</span> </h1>
         </div>
-        <div class="border-line">
-            <h1>}</h1>
+        <div class="event">
+            <div class="border-line">
+                <h1>{</h1>
+            </div>
+            <div class="event-txt">
+                <h1 class="red">추가혜택 :</h1>
+                <h1>토큰 4820개 (로얄:4800+서비스20)<br>
+                    보너스 M-Point +500</h1>
+            </div>
+            <div class="border-line">
+                <h1>}</h1>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="video-bg">
-    <div class="video">
-        <video class="lotto-video" controls>
-            <source src="video/lotto-video.mp4" type="video/mp4">
-        </video>
-    </div>
-</section>
-
-<section class="footer-bg">
-    <div class="footer-img">
-        <img src="images/footer-lotto.png" alt="lotto" class="foot-img">
-    </div>
-</section>
-
-<section>
-    <div class="lotto-footer-title">
-        <div class="lotto-footer-img">
-            <img src="images/lotto-num.png" alt="lotto">
+    <section class="video-bg">
+        <div class="video">
+            <video class="lotto-video" controls>
+                <source src="video/lotto-video.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="lotto-footer-title-txt">
-            <h1>특허 출원 예정 </h1>
-            <p>전문 로또분석가들과 다년간<br>
-                연구끝에 완성된 최정예 성공률의 <br>
-                AQ알고리즘으로 최대 효율을 <br>
-                자랑합니다. </p>
+    </section>
+
+    <section class="footer-bg">
+        <div class="footer-img">
+            <img src="images/footer-lotto.png" alt="lotto" class="foot-img">
         </div>
-    </div>
-</section>
+    </section>
+
+    <section>
+        <div class="lotto-footer-title">
+            <div class="lotto-footer-img">
+                <img src="images/lotto-num.png" alt="lotto">
+            </div>
+            <div class="lotto-footer-title-txt">
+                <h1>특허 출원 예정 </h1>
+                <p>전문 로또분석가들과 다년간<br>
+                    연구끝에 완성된 최정예 성공률의 <br>
+                    AQ알고리즘으로 최대 효율을 <br>
+                    자랑합니다. </p>
+            </div>
+        </div>
+    </section>
 
 
-<footer class="footer">
-    <p>※과한 로또, 도박은 사행성 중독으로 인한 경제적 부담을 불러 올 수 있습니다.</p>
-    <p>사이트명: 로또 센터 경기도 안산시 상록구 석삼말로 19, 301호<br>
-        상호: (주)행운네트웍스  사업자번호: 162-81-01378  대표자 김건우 문의: 1522-9508</p>
-    <p>
-        Copyright 2020. Glnetworks all rights reserved. 통신판매업신고: 2019-경기안산-2071
-    </p>
-</footer>
+    <footer class="footer">
+        <p>※과한 로또, 도박은 사행성 중독으로 인한 경제적 부담을 불러 올 수 있습니다.</p>
+        <p>사이트명: 로또 센터 경기도 안산시 상록구 석삼말로 19, 301호<br>
+            상호: (주)행운네트웍스 사업자번호: 162-81-01378 대표자 김건우 문의: 1522-9508</p>
+        <p>
+            Copyright 2020. Glnetworks all rights reserved. 통신판매업신고: 2019-경기안산-2071
+        </p>
+    </footer>
 
-<script src="js/jquery.min.js"></script>
-<script src='js/core.js'></script>
-<script src="js/script.js"></script>
-    
+    <script src="js/jquery.min.js"></script>
+    <script src='js/core.js'></script>
+    <script src="js/script.js"></script>
+    <script src="js/lottoDB.js"></script>
+
 </body>
+
 </html>
