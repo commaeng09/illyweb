@@ -40,9 +40,9 @@ section p {
     font-size: 1.2em;
 }
 
-.preloader{
+/* .preloader{
     opacity: 0;
-}
+} */
 .preloader {
     position: relative;
     top: 0;
@@ -449,9 +449,7 @@ footer {
     font-family: 'GmarketSansMedium';
 }
 
-/* .preloader{
-    opacity: 0;
-} */
+
 
 @media(max-width:1160px) {
     .lotto-footer-title {
