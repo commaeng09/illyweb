@@ -1,11 +1,4 @@
-var year = getUpcomingSunday().getFullYear();
-document.getElementById("yearby").innerHTML = year;
 
-var month = getUpcomingSunday().getMonth();
-document.getElementById("monthby").innerHTML = month + 1;
-
-var day = getUpcomingSunday().getDay();
-document.getElementById("dayby").innerHTML = day + 7;
 
 
 // function getUpcomingSunday() {
@@ -58,3 +51,25 @@ loopDateFromToday(2002, 12, 7, function (array) {
     var nl = array.length;
     document.getElementById("labs").innerHTML = nl;
 });
+
+var currentDay = new Date();  
+var theYear = currentDay.getFullYear();
+var theMonth = currentDay.getMonth();
+var theDate  = currentDay.getDate();
+var theDayOfWeek = currentDay.getDay();
+ 
+var thisWeek = [];
+ 
+for(var i=0; i<7; i++) {
+  var resultDay = new Date(theYear, theMonth, theDate + (i - theDayOfWeek));
+  var yyyy = resultDay.getFullYear();
+  var mm = Number(resultDay.getMonth()) + 1;
+  var dd = resultDay.getDate();
+ 
+  mm = String(mm).length === 1 ? '0' + mm : mm;
+  dd = String(dd).length === 1 ? '0' + dd : dd;
+ 
+  thisWeek[i] = yyyy + '년' + mm + '월' + dd + '일';
+}
+ 
+document.getElementById('yearby').innerHTML=thisWeek[6];
